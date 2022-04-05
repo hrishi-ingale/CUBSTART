@@ -2,7 +2,7 @@
 var socket = io();
 
 // TODO: Cause the event joining message on the reception of a name
-
+socket.emit('join', name);
 // if form is submitted, cause a chat message event
 $('form').submit(function(e) {
     // will prevent page reloading
